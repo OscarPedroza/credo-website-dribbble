@@ -1,0 +1,83 @@
+/* ------------------------ */
+/* SMALL DESKTOPS */
+/* ------------------------ */
+
+@media only screen and (max-width: 1240px) {
+  /*------- Team section ------- */
+
+  .btn-arrow--left {
+    left: 1rem;
+    transform: translate(0, 50%);
+  }
+
+  .btn-arrow--right {
+    right: 1rem;
+    transform: translate(0, 50%);
+  }
+
+  .team-members-container {
+    overflow-x: hidden;
+  }
+}
+
+/* --------------------------- */
+/* HORIZONTAL TABLETS  */
+/* --------------------------- */
+
+@media only screen and (max-width: 860px) {
+  /*------- General and components ------- */
+  html {
+    font-size: 56.25%;
+  }
+
+  .primary-heading {
+    max-width: 30ch;
+  }
+}
+
+/* --------------------------- */
+/* TABLETS  */
+/* --------------------------- */
+
+@media only screen and (max-width: 860px) {
+  /*------- General and components ------- */
+  html {
+    font-size: 50%;
+  }
+}
+
+/* --------------------------- */
+/* PHONES  */
+/* --------------------------- */
+
+@media only screen and (max-width: 680px) {
+  /*------- Header ------- */
+  .header-container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 3rem;
+    order: 1;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s;
+  }
+
+  .nav.active {
+    max-height: 62rem;
+  }
+
+  .nav-list {
+    margin-top: 5rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu-btn {
+    display: inline-block;
+  }
+}
