@@ -41,17 +41,13 @@
 
 @media only screen and (max-width: 860px) {
   /*------- General and components ------- */
-  html {
-    font-size: 50%;
+
+  .primary-heading {
+    max-width: 22ch;
   }
-}
 
-/* --------------------------- */
-/* PHONES  */
-/* --------------------------- */
-
-@media only screen and (max-width: 680px) {
   /*------- Header ------- */
+
   .header-container {
     justify-content: space-between;
     flex-wrap: wrap;
@@ -79,5 +75,29 @@
 
   .menu-btn {
     display: inline-block;
+  }
+
+  /*------- Hero section ------- */
+
+  .hero-description {
+    max-width: 55ch;
+  }
+}
+
+/* --------------------------- */
+/* PHONES  */
+/* --------------------------- */
+
+@media only screen and (max-width: 600px) {
+  /*------- General and components ------- */
+  .primary-heading {
+    max-width: 15ch;
+    line-height: 1.3;
+  }
+
+  /*------- Hero section ------- */
+
+  .hero-description {
+    max-width: 34ch;
   }
 }
