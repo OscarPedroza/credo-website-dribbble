@@ -90,14 +90,24 @@
 
 @media only screen and (max-width: 600px) {
   /*------- General and components ------- */
+
   .primary-heading {
     max-width: 15ch;
     line-height: 1.3;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 9.6rem;
   }
 
   /*------- Hero section ------- */
 
   .hero-description {
     max-width: 34ch;
+  }
+
+  .papers-img-box {
+    order: 1;
   }
 }
