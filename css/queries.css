@@ -16,7 +16,9 @@
   }
 
   .team-members-container {
-    overflow-x: hidden;
+    gap: 16rem;
+    padding-right: 14rem;
+    padding-left: 14rem;
   }
 }
 
@@ -82,6 +84,12 @@
   .hero-description {
     max-width: 55ch;
   }
+
+  /*------- Team section ------- */
+
+  .team-members-container {
+    padding-top: 8rem;
+  }
 }
 
 /* --------------------------- */
@@ -109,5 +117,16 @@
 
   .papers-img-box {
     order: 1;
+  }
+
+  /*------- Our team section ------- */
+
+  .btn-arrow {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .arrow-icon {
+    font-size: 2rem;
   }
 }

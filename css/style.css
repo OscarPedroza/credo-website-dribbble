@@ -172,10 +172,6 @@
   grid-template-columns: 44fr 56fr;
 }
 
-.papers-img {
-  transform: scale(1.1) translateX(-20px);
-}
-
 .solution-container p {
   width: 90%;
 }
@@ -185,6 +181,7 @@
 /* ------------------------ */
 
 .team-section {
+  position: relative;
   padding: 9.6rem 0;
 }
 
@@ -197,10 +194,20 @@
 }
 
 .team-members-container {
-  position: relative;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  gap: 8.5rem;
+  justify-content: space-between;
   padding-top: 12.8rem;
+  padding-bottom: 1rem;
   text-align: center;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.team-member {
+  flex-basis: 22rem;
+  flex-shrink: 0;
 }
 
 .member-img {
@@ -224,25 +231,35 @@
   border-radius: 50%;
   box-shadow: 1px 6px 8px -1px rgba(204, 204, 204, 0.5);
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .btn-arrow:hover .arrow-icon {
   color: var(--tertiary-color);
 }
 
+.btn-arrow:active {
+  background-color: var(--secundary-color);
+}
+
+.btn-arrow:active .arrow-icon {
+  color: var(--white);
+}
+
 .btn-arrow--left {
   left: 0;
-  transform: translate(-50%, 50%);
+  transform: translate(100%, 100%);
 }
 
 .btn-arrow--right {
   right: 0;
-  transform: translate(50%, 50%);
+  transform: translate(-100%, 100%);
 }
 
 .arrow-icon {
   font-size: 2rem;
   color: var(--gray);
+  transition: color 0.2s;
 }
 
 /* ------------------------ */
